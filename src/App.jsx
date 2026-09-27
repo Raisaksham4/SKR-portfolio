@@ -1170,6 +1170,16 @@ function Credentials() {
     },
     {
       id: "02",
+      issuer: "MICROSOFT",
+      title: "AZURE ADMINISTRATOR",
+      level: "ASSOCIATE",
+      date: "SEP 2026",
+      code: "AZ-104",
+      type: "CLOUD ADMINISTRATION",
+      link: "https://learn.microsoft.com/api/credentials/share/en-in/raisaksham/523B039D0BBFE4D9?sharingId=D4D4F63B3E79B093",
+    },
+    {
+      id: "03",
       issuer: "AMAZON WEB SERVICES",
       title: "AWS CERTIFIED CLOUD PRACTITIONER",
       level: "FOUNDATIONAL",
@@ -1179,7 +1189,17 @@ function Credentials() {
       link: "https://www.credly.com/badges/42fb81d8-2075-4676-ad36-854d92c3b82f/public_url",
     },
     {
-      id: "03",
+      id: "04",
+      issuer: "ANTHROPIC",
+      title: "CLAUDE CERTIFIED ARCHITECT",
+      level: "PROFESSIONAL",
+      date: "SEP 2026",
+      code: "CLAUDE",
+      type: "AI / SOLUTION ARCHITECTURE",
+      link: "https://www.credly.com/badges/17dbcc68-94ac-4a46-b477-856089ef37f1/public_url",
+    },
+    {
+      id: "05",
       issuer: "ANTHROPIC",
       title: "CLAUDE CERTIFIED ARCHITECT",
       level: "FOUNDATIONS",
@@ -1189,7 +1209,7 @@ function Credentials() {
       link: "https://www.credly.com/badges/0186a15d-9dfe-4a80-a7cb-cb347a30961c/public_url",
     },
     {
-      id: "04",
+      id: "06",
       issuer: "GOOGLE",
       title: "GOOGLE IT SUPPORT",
       level: "PROFESSIONAL CERTIFICATE",
@@ -1252,7 +1272,9 @@ function Credentials() {
           <div className="credential-command-output">
             <span>→ scanning certifications...</span>
             <span>→ validating cloud credentials...</span>
-            <span className="terminal-green">→ 04 certs found</span>
+            <span className="terminal-green">
+              → {String(credentials.length).padStart(2, "0")} certs found
+            </span>
           </div>
         </div>
       </div>
